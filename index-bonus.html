@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title></title>
+  </head>
+  <body style="margin:0; padding:0">
+
+    <div id="root" :style="'width:100vw; height:100vh; background-image:url(' + backgroundImg + '); background-size:cover;'">
+
+      <div style="display:flex; justify-content:space-around; width:100%">
+          <span><img @click="ouch" style="border-radius:50%; cursor:pointer; margin-top:20px" :src="squaloBianco" alt="squalo-bianco"><span :style="'color:' + textColor + '; font-size:1.5em; font-weight:bold'">Squalo Bianco</span></span>
+          <span><img @click="ouch" style="border-radius:50%; cursor:pointer; margin-top:20px" :src="squaloTigre" alt="squalo-tigre"><span :style="'color:' + textColor + '; font-size:1.5em; font-weight:bold'">Squalo Tigre</span></span>
+      </div>
+
+      <div style="display:flex; justify-content:space-around">
+          <span><img @click="ouch" style="border-radius:50%; cursor:pointer; margin-top:20px" :src="squaloMako" alt="squalo-mako"><span :style="'color:' + textColor + '; font-size:1.5em; font-weight:bold'">Squalo Mako</span></span>
+          <span><img @click="ouch" style="border-radius:50%; cursor:pointer; margin-top:20px" :src="squaloLeuca" alt="squalo-leuca"><span :style="'color:' + textColor + '; font-size:1.5em; font-weight:bold'">Squalo Leuca</span></span>
+          <span><img @click="ouch" style="border-radius:50%; cursor:pointer; margin-top:20px" :src="squaloToro" alt="squalo-toro"><span :style="'color:' + textColor + '; font-size:1.5em; font-weight:bold'">Squalo Toro</span></span>
+      </div>
+
+    </div>
+
+    <script src="js/script-bonus.js" charset="utf-8"></script>
+  </body>
+</html>
